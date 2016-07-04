@@ -1,0 +1,43 @@
+name: Akshay Agarwal
+description: Programmer, Entrepreneur from Earth.
+meta_description: ""
+
+aboutPage: true
+
+markdown: kramdown
+highlighter: rogue
+gems: [jekyll-paginate]
+
+paginate: 20
+baseurl: /
+domain_name: 'http://akshayagarwal.me'
+google_analytics: 'UA-XXXXXXXX-X'
+disqus: true
+disqus_shortname: 'akshayagarwal'
+
+# Details for the RSS feed generator
+url:            'http://akshayagarwal.me'
+author:         'Akshay Agarwal'
+authorTwitter:  ''
+
+permalink:       /:title/
+
+defaults:
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post
+    -
+        scope:
+            path: ""
+            type: drafts
+        values:
+            layout: post
