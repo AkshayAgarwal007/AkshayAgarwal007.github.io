@@ -11,7 +11,7 @@ gems: [jekyll-paginate]
 paginate: 20
 baseurl: /
 domain_name: 'http://akshayagarwal.me'
-google_analytics: 'UA-XXXXXXXX-X'
+google_analytics: 'UA-64882818-4'
 disqus: true
 disqus_shortname: 'akshayagarwal'
 
