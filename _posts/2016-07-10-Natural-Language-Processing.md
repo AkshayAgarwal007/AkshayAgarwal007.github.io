@@ -1,12 +1,7 @@
----
-title: Introduction to Natural Language Processing
-date: {}
-description: Natural Language Processing
-published: true
----
+
 ---
 title:  "Introduction to Natural Language Processing"
-date:   2016-07-101.- 12:58:00
+date:   2016-07-14 12:58:00
 description: Natural Language Processing
 ---
 
