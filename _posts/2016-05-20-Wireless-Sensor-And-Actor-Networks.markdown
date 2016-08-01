@@ -19,6 +19,8 @@ In WSANs the sensor nodes collect data from the environment and the actor nodes 
 1. Semi-Automated Architecture:  Sensors sensing a phenomenon route back the data to the sink which may issue some command to the actors. Because the sink (central controller) collects the data and coordinates the acting process this is called as a semi-automated architecture. 
 2. Automated Architecture: Sensors transmit their reading to the actor nodes which process all incoming data and initiate appropriate actions. So because of non-existence of a central controller this is called as an automated architecture.
 
+![Types of Architecture](../../assets/images/wsan.PNG)
+
 Some of the advantages of the Automated Architecture could be as follows:
 
 1. Low Latency:  Because of sensor-actor coordination the latency in case of WSANs in minimized.
