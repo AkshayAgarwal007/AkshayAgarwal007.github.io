@@ -12,6 +12,7 @@ WSNs consists of sensor nodes which can only sense the physical and environmenta
 4. The number of sensor nodes deployed may be in the order of hundreds or thousands but actor nodes dos not need such a dense deployment.
 5. Unlike WSNs where the central entity (i.e. sink) performs the functions of data collection and coordination, in case of WSANs sensor-actor and actor-actor coordination is required.
 
+
 ### Characteristics of WSANs
 
 In WSANs the sensor nodes collect data from the environment and the actor nodes performs action based on the sensed data. The sink node monitors the overall network and communicates with the task manager node and sensor and actor nodes. Depending on the type of application a Wireless Sensor and Actor Network can have two types of architecture:
