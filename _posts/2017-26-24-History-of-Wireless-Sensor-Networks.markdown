@@ -1,6 +1,7 @@
+
 ---
 title:  "A look at the DSN (Distributed Sensor Network) from the 1980s"
-date:   2017-06-24 12:58:00
+date:   2017-12-24 12:58:00
 description: Layout Management
 ---
 
