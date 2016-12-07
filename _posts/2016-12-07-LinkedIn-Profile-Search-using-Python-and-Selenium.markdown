@@ -24,11 +24,11 @@ It is achieved here in the simplest and best possible way and is based upon the 
 
 Let’s see how to construct a query using Google search operators to search for the best matching profile on LinkedIn. First, we’ll start by telling Google that we only want to look at <strong>linkedin.com</strong>. This is accomplished via the site search operator.
 
-<pre><strong>site: www.linkedin.com/in </strong> // LinkedIn uses the 'in' directory for public profiles</pre>
+<pre>site: www.linkedin.com/in // LinkedIn uses the 'in' directory for public profiles</pre>
 
 Combining it with the input information we have, the search query will look something like this: 
 
-<pre><strong>site: www.linkedin.com/in  + person’s name + person’s position + person’s company</strong></pre>
+<pre>site: www.linkedin.com/in  + person’s name + person’s position + person’s company</pre>
 
 Since LinkedIn allows user to control what information is viewed by the general public and search engines, some profiles might not be indexed by search engines and this technique might not always work.
 
