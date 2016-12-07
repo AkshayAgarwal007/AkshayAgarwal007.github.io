@@ -13,7 +13,7 @@ of web scrapping <a href="https://automatetheboringstuff.com/chapter11/" target=
 
 Suppose you have an input file in csv/json format which contain information about some executive’s name, title, firm and we need to get his / her best matching linked profile URL. Since the LinkedIn people search API is closed now (more details <a href="https://developer.linkedin.com/support/developer-program-transition" target="_blank">here</a>) searching for best matching profile is a little tricky.
 
-An example input file can look like this:
+An example **input file**(.xlsx) can look like this:
 
 ![Example Input file](../../assets/images/input.png)
 
@@ -34,13 +34,13 @@ Combining it with the input information we have, the search query will look some
 
 <pre>site: www.linkedin.com/in  + person’s name + person’s position + person’s company</pre>
 
-The search results for LinkedIn CEO Jeff Weiner's profile using the form of querying mentioned above may look like this:
+The search results for **LinkedIn CEO Jeff Weiner's LinkedIn profile** using the form of querying mentioned above may look like this:
 
 ![Search Results](../../assets/images/searchop.png)
 
 Since LinkedIn allows user to control what information is viewed by the general public and search engines, some profiles might not be indexed by search engines and this technique might not always work.
 
-If you have already done some web scrapping you might be familiar with libraries like <strong>urllib</strong>, strong>httplib</strong> and <strong>requests</strong>. These are good traditional tools for web scrapping but some sites don’t like to be scrapped and would put you behind a CAPTCHA check if you overdo it. In such a case your web scrapping bot should disguise itself as a human being. Selenium does exactly the same. <strong>Selenium</strong> is a webdriver and its Python binding allows your script to take control of your browser (Firefox/Chrome/PhantomJS) and makes it difficult for a website to recognize whether it’s a bot or a human being.
+If you have already done some web scrapping you might be familiar with libraries like <strong>urllib</strong>, <strong>httplib</strong> and <strong>requests</strong>. These are good traditional tools for web scrapping but some sites don’t like to be scrapped and would put you behind a CAPTCHA check if you overdo it. In such a case your web scrapping bot should disguise itself as a human being. Selenium does exactly the same. <strong>Selenium</strong> is a webdriver and its Python binding allows your script to take control of your browser (Firefox/Chrome/PhantomJS) and makes it difficult for a website to recognize whether it’s a bot or a human being.
 
 You need to install Selenium first and also the Firefox webdriver. Set the path to the Firefox webdriver in your system’s path variable. Install Selenium’s Python bindings. You can simply do a pip install.
 
@@ -79,12 +79,13 @@ Now we need to scrap the title and URL of the search results. For this you can f
 
 <pre> Xpath=//tagname[@attribute='value']</pre>
 <ul>
-	<li><strong>//:</strong> Select current node.</li>
+	<li><strong>//</strong>: Select current node.</li>
 	<li><strong>Tagname</strong>: Tagname of the particular node.</li>
 	<li><strong>@:</strong> Select attribute.</li>
 	<li><strong>Attribute</strong>: Attribute name of the node.</li>
 	<li><strong>Value</strong>: Value of the attribute.</li>
 </ul>
+
 
 You can also right click on an element and click on inspect element and then again right click on the highlighted html content and copy the XPath. So, we need to add the following lines to the code above to get the title and link corresponding to each search result. 
 ( You can learn more about XPath from <a href="http://www.w3schools.com/xml/xpath_intro.asp" target="_blank">w3Schools</a> article.)
@@ -115,7 +116,7 @@ with open('urls.json','wb') as outputfile:
     json.dump(results, outputfile) 
 ```
 
-The output in JSON after running the code would look something like: 
+The **output** in JSON after running the code would look something like: 
 
 <pre>
 [["Jeff Weiner | LinkedIn", "https://www.linkedin.com/in/jeffweiner08"],
@@ -160,3 +161,5 @@ Finally, it returns the LinkedIn profile URL corresponding to the best matched p
 	<li><a href="https://gist.github.com/AkshayAgarwal007/46d2715292165f60f54657849502cccf" target="_blank">GitHub Gist Link</a></li>
 	<li><a href="https://github.com/AkshayAgarwal007/LinkedinScrapper" target="_blank">GitHub Repository Link</a></li>
 </ul>
+
+In the next article you'll learn how to scrap information from the searched LinkedIn profile.
