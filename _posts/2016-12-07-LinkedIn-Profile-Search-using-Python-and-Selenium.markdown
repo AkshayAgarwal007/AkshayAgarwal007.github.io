@@ -87,6 +87,7 @@ Now we need to scrap the title and URL of the search results. For this you can f
 </ul>
 
 
+
 You can also right click on an element and click on inspect element and then again right click on the highlighted html content and copy the XPath. So, we need to add the following lines to the code above to get the title and link corresponding to each search result. 
 ( You can learn more about XPath from <a href="http://www.w3schools.com/xml/xpath_intro.asp" target="_blank">w3Schools</a> article.)
 
@@ -161,5 +162,7 @@ Finally, it returns the LinkedIn profile URL corresponding to the best matched p
 	<li><a href="https://gist.github.com/AkshayAgarwal007/46d2715292165f60f54657849502cccf" target="_blank">GitHub Gist Link</a></li>
 	<li><a href="https://github.com/AkshayAgarwal007/LinkedinScrapper" target="_blank">GitHub Repository Link</a></li>
 </ul>
+
+
 
 In the next article you'll learn how to scrap information from the searched LinkedIn profile.
