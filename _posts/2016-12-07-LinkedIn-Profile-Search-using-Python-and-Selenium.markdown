@@ -13,7 +13,7 @@ of web scrapping <a href="https://automatetheboringstuff.com/chapter11/" target=
 
 Suppose you have an input file in csv/json format which contain information about some executive’s name, title, firm and we need to get his / her best matching linked profile URL. Since the LinkedIn people search API is closed now (more details <a href="https://developer.linkedin.com/support/developer-program-transition" target="_blank">here</a>) searching for best matching profile is a little tricky.
 
-An example **input file**(.xlsx) can look like this:
+An example **input file**(.xlsx) may look like this:
 
 ![Example Input file](../../assets/images/input.png)
 
