@@ -13,6 +13,10 @@ of web scrapping <a href="https://automatetheboringstuff.com/chapter11/" target=
 
 Suppose you have an input file in csv/json format which contain information about some executive’s name, title, firm and we need to get his / her best matching linked profile URL. Since the LinkedIn people search API is closed now (more details <a href="https://developer.linkedin.com/support/developer-program-transition" target="_blank">here</a>) searching for best matching profile is a little tricky.
 
+An example input file can look like this:
+
+![Example Input file](../../assets/images/input.png)
+
 It is achieved here in the simplest and best possible way and is based upon the following assumptions based upon empirical evaluation:
 
 <ul>
@@ -29,6 +33,10 @@ Let’s see how to construct a query using Google search operators to search for
 Combining it with the input information we have, the search query will look something like this: 
 
 <pre>site: www.linkedin.com/in  + person’s name + person’s position + person’s company</pre>
+
+The search results for LinkedIn CEO Jeff Weiner's profile using the form of querying mentioned above may look like this:
+
+![Search Results](../../assets/images/searchop.png)
 
 Since LinkedIn allows user to control what information is viewed by the general public and search engines, some profiles might not be indexed by search engines and this technique might not always work.
 
